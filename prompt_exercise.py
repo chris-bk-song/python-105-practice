@@ -17,7 +17,7 @@ while True:
 
     print(groceries)
 
-# Wrong way
+# Wrong way (It will only display one item for my list)
 
 # while True:
 #    groceries = []
