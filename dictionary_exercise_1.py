@@ -6,7 +6,9 @@ friend = {
     'snack': ['popcorn', 'reeces pieces']
 }
 
+print(friend)
+
 # Update dictionary with information about cat
 friend['cat'] = 'Mr Robot'
-print(friend)
+
 print(friend['cat'])
