@@ -7,7 +7,7 @@ hotel = {
     '101': {
         'guest': {
             'name': 'Elliot Anderson',
-            'phone': 8675309
+            'phone': '222-222-2222'
         }
     },
     '102': {},
@@ -15,7 +15,7 @@ hotel = {
     '104':{
         'guest': {
             'name': 'Darlene Alderson',
-            'phone': 4567890
+            'phone': '111-111-1111'
         }
     },
     '105': {},
@@ -52,6 +52,7 @@ while True:
                 if hotel[room_number] == {}:
                     print(f'Room {room_number} is available.')
                     yes_or_no = input('Do you want to take this room? [Y/N]\n')
+                    yes_or_no = yes_or_no.upper()
                     if yes_or_no == 'Y':
                         new_name = input('What is the name?\n')
                         new_phone = input('What the phone number?\n')
@@ -71,6 +72,7 @@ while True:
             for room_number in hotel.keys():
                 if hotel[room_number] != {}:
                     remove = input(f'Do you want check out of room {room_number}? [Y/N]\n')
+                    remove = remove.upper()
                     if remove == 'Y':
                         hotel[room_number] = {}
                         print(f'[Room {room_number} has been checked out.]\n')
